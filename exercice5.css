@@ -1,0 +1,161 @@
+@font-face {
+font-family: "gta5";
+src: url("master_of_break.otf") format("opentype");
+}
+@media (max-width: 600px){
+	body{
+		background-color:#f0e173 ;
+	}
+	#yellow{
+		display: none;
+	}
+	#frrrr{
+		display: none;
+	}
+}
+#Titre1
+{
+	text-align: center;
+	font-size: 35px;
+	font-family: roboto;
+	background:   linear-gradient(.25turn ,#B105C9 , #7D0909 );
+	color: white;
+}
+nav li
+{
+	list-style-type: none;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+nav	
+{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	height: 40px;
+}
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	transition: border-bottom 0.5s ease-out, font-size 0.5s;
+}
+nav a:hover
+{
+	color: orange;
+	border-bottom: 2px solid gold;
+	font-size: 150%;
+}
+nav ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+#u1:first-child , #u1:nth-child(3)
+{
+	color: blue;
+	font-weight: lighter;
+	font-variant-ligatures: no-common-ligatures;
+	letter-spacing: 0.15rem;
+}
+#u1:nth-child(2) , #u1:last-child
+{
+	color: purple;
+	font-weight: bold;
+	font-variant-ligatures: no-common-ligatures;
+	letter-spacing: 0.15rem;
+	text-decoration: underline; 
+}
+
+p::first-letter
+{
+	color: #A725A9;
+	font-size: 130%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#d1,#d2{
+	margin-bottom: 15px;
+}
+#s1{
+	font-family: gta5;
+	margin-right: 12px;
+}
+#s2:hover {
+	box-shadow: 5px 5px 5px;
+}
+#thierry{
+	border-radius: 30px;
+	border: 1px solid bl;
+}
+#overflow{
+	text-align: justify;
+	width: 10%;
+	overflow: scroll;
+}
+#disparait{
+	opacity: 1;
+	transition: opacity 1s;
+}
+#disparait.fadeout{
+	opacity: 0;
+}
+#disparait.fadein{
+	opacity: 1;
+}
+#yellow{
+	background-color: yellow;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	position: relative;
+	animation-name: balle;
+	animation-duration: .5s;
+	animation-iteration-count: infinite; 
+}	
+@keyframes balle{
+	0% {left:0px;top:0px;}
+	5% {background-color: red; left:50px;top:0px;}
+	10% {background-color: blue; left:100px;top:0px;}
+	15% {background-color: green; left:150;top:0px;}
+	20% {background-color: purple; left:200px;top:0px;}
+	25% {background-color: cyan; left:250px;top:0px;}
+	30% {background-color: magenta; left:300px;top:0px;}
+	35% {background-color: orange;  left:350px;top:0px;}
+	40% {background-color: brown; left:400px;top:0px;}
+	45% {background-color: grey; left:450px;top:0px;}
+	50% {background-color: black; left:500px;top:0px;}
+	55% {background-color: grey; left:450px;top:0px;}
+	60% {background-color: brown; left:400px;top:0px;}
+	65% {background-color: orange; left:350px;top:0px;}
+	70% {background-color: magenta; left:300px;top:0px;}
+	75% {background-color: cyan; left:250px;top:0px;}
+	80% {background-color: purple; left:200px;top:0px;}
+	85% {background-color: green; left:150;top:0px;}
+	90% {background-color: blue; left:100px;top:0px;}
+	95% {background-color: red; left:50px;top:0px;}
+	100% {background-color: yellow; left:0px;top:0px;}
+}
+#frrrr{
+	background-color: yellow;
+	height: 100px;
+	width: 100px;
+	border-radius: 20px 40px 90px 35px;
+	position: relative;
+	animation-name: yolo;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes yolo{
+	0% { left: 0px; top: 0px;}
+	100% { transform:rotate(180deg);left: 800px; top:0px;  }
+}
+
